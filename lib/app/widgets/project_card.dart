@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:mateusvenancio/app/home/pages/projetos/widgets/modal.dart';
 import 'package:mateusvenancio/app/model/project_model.dart';
 import 'package:mateusvenancio/app/model/project_status_enum.dart';

@@ -23,7 +23,7 @@ class ProjetosRepository {
       usedTechnologies: ['Flutter Web'],
       image: 'https://i.imgur.com/LD5JikD.png',
       githubLink: 'https://github.com/mateushvenancio/mateusvenancio',
-      externalLink: 'www.mateusvenancio.com.br',
+      externalLink: 'http://www.mateusvenancio.com.br',
       description: "Este site mesmo. Vou expor meus projetos aqui.",
     ),
     ProjectModel(

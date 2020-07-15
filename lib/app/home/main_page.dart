@@ -12,7 +12,7 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainPageState extends State<MainPage> {
-  final PageController _pageController = PageController(initialPage: 0);
+  final PageController _pageController = PageController(initialPage: 1);
 
   @override
   Widget build(BuildContext context) {
@@ -66,9 +66,36 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
             Divider(height: 5, color: Colors.black),
-            ListTile(title: Text('Home'), onTap: () {}),
-            ListTile(title: Text('Projetos'), onTap: () {}),
-            ListTile(title: Text('Sobre'), onTap: () {}),
+            ListTile(
+                title: Text('Home'),
+                onTap: () {
+                  _pageController.animateToPage(
+                    1,
+                    duration: Duration(milliseconds: 300),
+                    curve: Curves.easeInOut,
+                  );
+                  Navigator.pop(context);
+                }),
+            ListTile(
+                title: Text('Projetos'),
+                onTap: () {
+                  _pageController.animateToPage(
+                    0,
+                    duration: Duration(milliseconds: 300),
+                    curve: Curves.easeInOut,
+                  );
+                  Navigator.pop(context);
+                }),
+            ListTile(
+                title: Text('Sobre'),
+                onTap: () {
+                  _pageController.animateToPage(
+                    2,
+                    duration: Duration(milliseconds: 300),
+                    curve: Curves.easeInOut,
+                  );
+                  Navigator.pop(context);
+                }),
             Divider(height: 5, color: Colors.black),
             ListTile(
               title: Text('Instagram'),

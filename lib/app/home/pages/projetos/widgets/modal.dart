@@ -52,8 +52,6 @@ class ProjectModal extends StatelessWidget {
           paddingVertical = 100;
         }
 
-        print(sizeInfo.deviceScreenType);
-
         return Dialog(
           insetPadding: EdgeInsets.symmetric(
             horizontal: paddingHorizontal,
